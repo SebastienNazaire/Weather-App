@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import './style.css';
 import Titles from './Components/Titles';
 import Form from './Components/Form';
 import Weather from './Components/Weather';
+import './style.css';
 
 const API_KEY = "389a0a515fbb8a0725c86a080b67db82";
 
@@ -51,6 +51,7 @@ class App extends Component {
 
   render() {
     return (
+      <div>
       <div className="wrapper">
 	      <div className="main">
 	      	<div className="container">
@@ -72,6 +73,7 @@ class App extends Component {
             </div>
 		      </div>
 	      </div>
+      </div>
       </div>
     );
   }
